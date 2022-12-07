@@ -10,10 +10,19 @@ function App() {
     setDarkMode(!darkMode);
   };
 
+  const Footer = () => {
+    return (
+      <div>
+        © CYF by <a href="https://github.com/OmidOmar">Omid Omar</a>
+      </div>
+    );
+  };
+
   return (
     <div className={darkMode ? "dark" : null}>
       <Header handleDarkMode={handleDarkMode} />
       <Search />
+      <Footer />
     </div>
   );
 }
